@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Lexend:wght@200;300;400;500;600;700;800&family=Montserrat+Alternates:ital,wght@0,300;0,400;0,700;1,500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&family=Source+Sans+Pro:ital,wght@0,300;0,600;0,700;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color:#264483;
+    --hero-banner:#233c7b;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.bars{
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color); 
+  }  
+/* 
+------------------------------------------
+HEADER CSS START
+------------------------------------------
+*/
+header {
+    width: 100%;
+    height: 15%;
+}
+.container{
+    max-width: 1300px;
+    /* max-width: calc(100vw - 15vw); */
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+.header .header-logo{
+    width: 170px;
+}
+
+.header .search-bar{
+    flex: 2;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.header .search-bar input{
+    width: 85%;
+    padding: 12px 45px;
+    border: 1px solid var(--main-color);
+    outline: none;
+    border-radius: 7px;
+    color: #858ea4;
+    font-weight: 500;
+}
+input::placeholder{
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 15px;
+}
+.header .search-bar::before{
+    content: url("../images/search-icon.svg");
+    position: absolute;
+    top: 10px;
+    left: 77px;
+    font-size: 20px;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: var(--main-color);
+    color: var(--main-color);
+    padding: 6px 20px;
+    font-weight: 500;
+}
+
+.buttons .nav-active{
+    background: var(--main-color);
+    border-radius: 5px;   
+    color: #ffffff;
+}
+nav.nav-bar {
+    /* margin-bottom: 15px; */
+}
+.nav-bar ul.nav-items-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+}
+.nav-bar ul li.has-sub-child{
+    position: relative;
+}
+.nav-bar ul li a.nav-links{
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+.nav-bar ul li.has-sub-child a.nav-links::after{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f107";    
+    position: relative;
+    left: 8px;
+}
+ul.sub-child,
+ul.company-sub-child
+{
+    display: none;
+    margin-top: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+li.has-sub-child:hover ul.sub-child{
+    display: block;
+    width: 180px;
+    position: absolute;
+    /* border: 2px solid red; */
+    z-index: 2;
+    left: 0;
+    top: 20px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+li.has-sub-child:hover ul.company-sub-child{
+    display: block;
+    width: 180px;
+    position: absolute;
+    /* border: 2px solid red; */
+    z-index: 2;
+    left: -80%;
+    top: 20px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+li.sub-list-items {
+    padding: 10px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+li.sub-list-items:hover{
+    background-color: #f28b04;
+    /* border-radius: 10px; */
+}
+a.sub-nav-links{
+    color: #ffffff;
+}
+/* 
+------------------------------------------
+HEADER CSS END
+------------------------------------------
+*/
+
+/* 
+------------------------------------------
+HERO BANNER CSS START
+------------------------------------------
+*/
+.hero-courses{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    margin-top: 10px;
+}
+.hero-banner{
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+.hero-banner h1 {
+    font-size: 45px;
+    width: 90%;}
+
+.hero-banner h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.hero-banner p {
+    width: 70%;
+    font-size: 18px;
+}
+.all-course{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    right: 0;
+}
+.all-course img {
+    width: 70px;
+    height: 70px;
+    animation: languages 5s linear infinite;
+    opacity: 0;
+}
+@keyframes languages {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.all-course img:nth-child(1){
+    animation-delay: 1s;
+}
+.all-course img:nth-child(2){
+    animation-delay: 2s;
+}
+.all-course img:nth-child(3){
+    animation-delay: 1s;
+}
+.all-course img:nth-child(4){
+    animation-delay: 3s;
+}
+.all-course img:nth-child(5){
+    animation-delay: 2s;
+}
+.all-course img:nth-child(6){
+    animation-delay: 4s;
+}
+.all-course img:nth-child(7){
+    animation-delay: 2s;
+}
+.all-course img:nth-child(8){
+    animation-delay: 2s;
+}
+.all-course img:nth-child(9){
+    animation-delay: 1s;
+}
+.all-course img:nth-child(10){
+    animation-delay: 1.5s;
+}
+.all-course img:nth-child(11){
+    animation-delay: 2.5s;
+}
+.all-course img:nth-child(12){
+    animation-delay: 3.5s;
+}
+.all-course img:nth-child(13){
+    animation-delay: 1.5s;
+}
+.all-course img:nth-child(14){
+    animation-delay: 0.5s;
+}
+/* 
+------------------------------------------
+HERO BANNER CSS END
+------------------------------------------
+*/
+/* 
+------------------------------------------
+HARDWORK CSS START
+------------------------------------------
+*/
+section.hardwok {
+    height: 70vh;
+}
+
+.heading {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.all-students {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards {
+    text-align: center;
+    line-height: 50px;
+}
+
+.heading h1 {
+    font-size: 55px;
+    color: var(--main-color);
+}
+.cards img {
+    width: 80px;
+    height: 80px;
+}
+
+.cards h2 {
+    font-size: 40px;
+}
+.cards h3{
+    color: #454545;
+    font-size: 25px;
+}
+
+/* 
+------------------------------------------
+HARDWORK CSS END
+------------------------------------------
+*/
+/* 
+------------------------------------------
+ACHIVER SECTION CSS
+------------------------------------------
+*/
+.achiver-section{
+    background-color: #eef0f5;
+    height: 50vh;
+}
+.achiever-heading{
+    text-align: center;
+    padding: 40px 0 7% 0;
+}
+.achiever-heading h1 {
+    font-size: 50px;
+    color: var(--main-color);
+}
+.owl-item {
+    width: 128.906px;
+    margin-right: 10px; 
+    }
+.owl-carousel .owl-item img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*
+----------------------------------
+ACHIVER SECTION CSS END 
+---------------------------------
+*/
+
+/*
+----------------------------------
+OUR PRODUCT CSS START 
+---------------------------------
+*/
+
+.our-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    gap: 5px;
+    margin-bottom: 60px;
+}
+
+.products {
+    flex-grow: 1;
+    max-width: 25%;
+    max-height: 35%;
+    margin: 20px;
+    padding: 10px;
+}
+.first-row img {
+    width: 100%;
+    height: 100%;
+}
+.second-row img:nth-child(4),
+.second-row img:nth-child(5) {
+    width: 60%;
+    height: 60%;
+}
+
+.products:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.products p {
+    max-width: 85%;
+    margin: 0 auto;
+    color: grey;
+}
+.products h2 {
+    margin: 10px 0;
+}
+/*
+----------------------------------
+OUR PRODUCT CSS END 
+---------------------------------
+*/
+/*
+----------------------------------
+AVENGER SECTION CSS START 
+---------------------------------
+*/
+
+.tech-avenger{
+    height: 100%;
+    background-color: #17364d;
+}
+.avenger-heading{
+    padding: 20px 0 5% 0;
+}
+.avenger-heading h1{ 
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+}
+.teacher{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+ .teacher-card {
+    position: relative;
+    max-width: 370px;
+    height: 260px;
+    background: #eef0f5;
+    margin:30px auto;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 50%);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.teacher-card:hover{
+    height: 450px;
+}
+.image{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 42px;
+    padding: 10px;
+}
+.image img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.teacher-card .creator-content{
+    position: relative;
+    margin-top: -140px;
+    padding:10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.teacher-card:hover .creator-content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    transition-delay: 0.3s;
+}
+.creator-links a{
+    /* background-color: #17364d; */
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 5px 5px 0 5px;
+} 
+.creator-links a img{
+    width: 100%;
+    height: 100%;
+}
+.designation{
+    font-size: 20px;
+    font-weight: 500;
+}
+.creator-content .info{
+    font-size: 15px;
+}
+/*
+----------------------------------
+AVENGER SECTION CSS END 
+---------------------------------
+*/
+
+/*
+----------------------------------
+PARTNER SECTION CSS START 
+---------------------------------
+*/
+.parteners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2.partener-heading {
+    font-size: 50px;
+    padding: 10px 0 45px 0;
+    color: var(--main-color);
+    text-align:center;
+}
+.partner-logo {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: all 0.5s ease-in-out;
+    animation: partners linear infinite;
+}
+.partner-logo img {
+    width: 100%;
+    height: 100%;
+}
+@keyframes partners {
+        100%{
+            transform: translateX(100%);
+        }
+}
+
+/*
+----------------------------------
+PARTNER SECTION CSS END 
+---------------------------------
+*/
+
+
+/*
+----------------------------------
+FOOTER SECTION CSS START 
+---------------------------------
+*/
+footer{
+    background-color: #233c7b;
+}
+.footer-content {
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.address {
+    width: 90%;
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.address li {
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+}
+.address li a {
+    color: #ffffff;
+}
+.address li a .fa-brands{
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.address li a .fa-brands:hover{
+    font-size: 30px;
+    color: #ff8901;
+}
+.any-questions li:first-child::before{
+    position: relative;
+    font-family: "Font Awesome 6 Free";
+    content:"\f3c5";
+    font-weight: 900;
+    margin-right: 15px;
+    color: #ffffff;
+}
+.any-questions li:nth-child(2)::before{
+    position: relative;
+    font-family: "Font Awesome 6 Free";
+    content:"\f095";
+    font-weight: 900;
+    margin-right: 15px;
+    color: #ffffff;
+}
+.any-questions li:last-child::before{
+    position: relative;
+    font-family: "Font Awesome 6 Free";
+    content:"\f0e0";
+    font-weight: 900;
+    margin-right: 15px;
+    color: #ffffff;
+}
+.footer-logo,
+.footer-company,
+.footer-products,
+.any-questions {
+    flex: 1;
+}
+
+.company-heading h2,
+.product-heading h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    word-spacing: 15px;
+    border-bottom: 3px solid orange;
+    width: 80px;
+}
+.footer-company nav,
+.footer-products nav,
+.any-questions nav {
+    margin-top: 20px;
+}
+
+.footer-company nav a.footer-links,
+.footer-products nav a.footer-links {
+    color: #ffffff;
+    line-height: 40px;
+}
+
+.footer-company nav a.footer-links:hover,
+.footer-products nav a.footer-links:hover{
+    color:#ff8901;
+}
+
+li.footer-list::before {
+    position: relative;
+    font-family: "Font Awesome 6 Free";
+    content: "\f0da";
+    font-weight: 900;
+    color: #ffffff;
+    margin-right: 11px;
+}
+.question-heading h2{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+/* .any-questions h2{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+} */
+.any-questions ul li a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 40px;
+}
+/*
+----------------------------------
+FOOTER SECTION CSS END 
+---------------------------------
+*/
+
+.blog-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.blog-article-heading {
+    text-align: center;
+    padding: 5% 0;
+}
+.blog-article-heading h1 {
+    font-size: 55px;
+    color: var(--main-color);
+}
+.blog-img {
+    margin: 0 auto;
+    /* height: 213px; */
+}
+
+.blog-img img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 220px;
+}
+
+.featured-blog {
+    width: 86%;
+    /* height: 440px;
+    margin-bottom: 50px; */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.admin-date{
+    padding-top: 20px;
+}
+.admin-date span {
+    margin-right: 40px;
+    font-weight: 600;
+    color: #8d9093;
+}
+.blog-content p {
+    color: #8d9093;
+    line-height: 25px;
+    padding:5px;
+}
+.blog-content h2 {
+    margin: 10px 0;
+    color: var(--main-color);
+    font-size: 20px;
+}
+.blog-content{
+    margin-left: 10px;
+    line-height: 35px;
+}
+section.blog-article {
+    padding-bottom: 40px;
+}

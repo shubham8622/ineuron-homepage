@@ -1,0 +1,325 @@
+@media screen and (max-width:1470px) {
+    .header .search-bar::before{
+        left: 80px;
+    } 
+
+}
+
+@media screen and (max-width:1310px) {
+    .container,
+    .all-course{
+        max-width:1150px
+    }
+    .header .search-bar::before{
+        left: 70px;
+    } 
+
+}
+
+@media screen and (max-width:1200px) {
+    .container,
+    .all-course{
+        max-width:1000px
+    }
+    .header .search-bar::before{
+        left: 60px;
+    }
+    .products h2 {
+        font-size: 18px;
+    } 
+    .products p {
+        font-size: 15px;
+    }
+    .blog-content p {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:1130px) {
+    .container,
+    .all-course{
+        max-width:900px
+    }
+    .all-course img {
+        width: 60px;
+        height: 60px;
+    }
+    .header .search-bar::before{
+        left: 55px;
+    } 
+    section.hardwok {
+        height: 60vh;
+    }
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .cards h2 {
+        font-size: 30px;
+    }
+
+    .achiever-heading h1 {
+        font-size: 40px;
+    }
+    h2.partener-heading {
+        font-size: 40px;    
+    }
+    .avenger-heading h1{
+        font-size: 40px;
+    }
+    .blog-article-heading h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header .search-bar::before{
+        left: 65px;
+    } 
+    .nav-bar{
+        display: none;
+    }
+    .buttons{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .blog-content p {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .blog-list {
+        display: block;
+    }
+    .featured-blog {
+        margin: 0 auto;
+        max-width: 50%;
+        margin-bottom: 30px;
+    }
+    .admin-date {
+        padding-top: 0px;
+    }
+    .blog-content h2 {
+        margin: 5px 0;
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width:930px) {
+    .container,
+    .all-course{
+        max-width:800px
+    }
+    .all-course img {
+        width: 50px;
+        height: 50px;
+    }
+    .header .search-bar::before{
+        left: 55px;
+    }
+    .cards h3 {
+        font-size: 20px;
+    }
+    .cards h2 {
+        font-size: 25px;
+    }
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .achiever-heading h1 {
+        font-size: 30px;
+    }
+    h2.partener-heading {
+        font-size: 30px;
+    }
+    .avenger-heading h1{
+        font-size: 30px;
+    }
+    .products p {
+        font-size: 15px;
+    }
+    
+    .our-products {
+        display: block;
+    }
+    
+    .products.first-row,
+    .products.second-row{
+        margin: 0 auto;
+    }
+    .products {
+        flex-grow: 1;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 20px;
+        padding: 10px;
+    }
+    .products img{
+        width: auto;
+        height: auto;
+    }
+
+    .blog-article-heading h1 {
+        font-size: 30px;
+    }
+    .admin-date span {
+        font-size: 15px;
+    }
+    .featured-blog {
+        max-width: 60%;
+    }
+    .footer-content {
+        display: block;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .container,
+    .all-course{
+        max-width:750px
+    }
+    .all-course img {
+        width: 50px;
+        height: 50px;
+    }
+    .header .search-bar::before{
+        left: 55px;
+    }
+    .hero-banner p {
+        width: 100%;
+        font-size: 17px;
+    }
+    .hero-banner h1 {
+        font-size: 35px;
+    }
+    .hero-banner h2 {
+        font-size: 25px;
+    }
+    .avenger-heading h1{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+    .container,
+    .all-course{
+        max-width:700px
+    }
+    .header .search-bar::before{
+        left: 50px;
+    }
+    .all-course{
+        flex-wrap: wrap;
+    }
+    .all-course img {
+        width: 40px;
+        height: 40px;
+    }
+    .achiver-section {
+        height: 40vh;
+    }
+    .achiver-section {
+        height: 50vh;
+    }
+    .partner-logo {
+        display: block;
+    }
+
+    .featured-blog {
+        max-width: 70%;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .header .search-bar::before{
+        left: 45px;
+    }
+    input::placeholder{
+        font-size: 12px;
+    }
+    .header .search-bar input {
+        padding: 11px 45px;
+    }
+    .header .header-logo {
+        width: 130px;
+    }
+    .hero-banner h1 {
+        font-size: 30px;
+    }
+    .cards img {
+        width: 70px;
+        height: 70px;
+    }
+    .all-students {
+        display: block;
+    }
+    section.hardwok {
+        height: 100vh;
+        margin-bottom:30px
+    }    
+    .achiever-heading h1 {
+        font-size: 30px;
+    }
+    .achiver-section {
+        height: 40vh;
+    }
+    .partner-logo {
+        text-align: center;
+    }
+    .partner-logo img{
+        width: 60%;
+    }
+    .featured-blog {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .header .search-bar::before {
+        left: 40px;
+        top: 8px;
+    }
+    .hero-banner p {
+        font-size: 15px;
+    }
+    .hero-banner h1 {
+        font-size: 25px;
+    }
+    .hero-banner h2 {
+        font-size: 20px;
+    }
+    .achiver-section {
+        height: 40vh;
+    }
+    h2.partener-heading {
+        padding: 30px 0 10px 0;
+    }    
+    input::placeholder{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:450px) {
+        .container{
+            max-width: 400px;
+        }
+        .image {
+            left: 13px;
+        }
+        .teacher-card:hover {
+            height: 490px;
+        }     
+        .search-bar{
+            display: none;
+        }
+        .header .header-logo {
+            /* margin: 0 auto; */
+        }           
+    }
