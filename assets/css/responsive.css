@@ -13,6 +13,9 @@
     .header .search-bar::before{
         left: 70px;
     } 
+    .course-info   h2{
+        font-size: 20px;
+    }
 
 }
 
@@ -27,6 +30,12 @@
     .products h2 {
         font-size: 18px;
     } 
+    .course-info{
+        line-height: 30px;
+    }
+    .course-info   h2{
+        font-size: 18px;
+    }
     .products p {
         font-size: 15px;
     }
@@ -70,6 +79,9 @@
     }
     .blog-article-heading h1 {
         font-size: 40px;
+    }
+    .course-info   h2{
+        font-size: 15px;
     }
 }
 
@@ -175,6 +187,18 @@
     }
     .footer-content {
         display: block;
+    }
+    .courses{
+        flex-direction: column;
+    }
+    .course-info h2 {
+        font-size: 20px;
+    }
+    .courses-list {
+        width: 60%;
+    }
+    a.program-links {
+        margin-top: 30px;
     }
 }
 
